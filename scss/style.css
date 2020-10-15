@@ -43,8 +43,7 @@ body {
   font-family: "Mont"; }
 
 ._container {
-  max-width: 1267px;
-  width: 100%;
+  width: 85%;
   margin: auto; }
 
 .header__other {
@@ -53,8 +52,7 @@ body {
   .header__other .header__other-wrapper nav {
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    height: 90px; }
+    align-items: center; }
     .header__other .header__other-wrapper nav .header__other-logo .logo .logo__img {
       margin-right: 16.54px; }
     .header__other .header__other-wrapper nav ul {
@@ -67,6 +65,9 @@ body {
         font-size: 14px;
         line-height: 55px;
         font-family: "Mont-SemiBold"; }
+        .header__other .header__other-wrapper nav ul .header__other-item a {
+          text-decoration: none;
+          color: #3C3E40; }
       .header__other .header__other-wrapper nav ul .header__other-item:first-child {
         margin-left: 0; }
       .header__other .header__other-wrapper nav ul .header__other-connection-item {
@@ -307,3 +308,5 @@ body {
     width: 28px;
     height: 28px;
     cursor: pointer; }
+
+/*# sourceMappingURL=style.css.map */

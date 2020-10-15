@@ -68,8 +68,7 @@ body{
     font-family: "Mont";
 }
 ._container{
-    max-width: 1267px;
-    width: 100%;
+    width: 85%;
     margin: auto;
 }
 .header__other{
@@ -80,7 +79,6 @@ body{
             display: flex;
             justify-content: space-between;
             align-items: center;
-            height: 90px;
             .header__other-logo{
                 .logo{
                     .logo__img{
@@ -98,6 +96,10 @@ body{
                     font-size: 14px;
                     line-height: 55px;
                     font-family: "Mont-SemiBold";
+                    a{
+                        text-decoration: none;
+                        color: #3C3E40;
+                    }
                 }
                 .header__other-item:first-child{
                     margin-left: 0;
