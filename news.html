@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="scss/reset.css">
     <link rel="stylesheet" href="scss/style.css">
+    <link rel="stylesheet" href="scss/media.css">
+
     <title>News</title>
 </head>
 <body>
@@ -53,54 +55,196 @@
                 <nav class="news__menu">
                     <ul class="news__menu-list">
                         <li class="news__menu-title">Show news:</li>
-                        <li class="news__menu-item">All</li>
-                        <li class="news__menu-item news__active">Last week</li>
-                        <li class="news__menu-item">For this month</li>
+                        <li onclick="openTab(event, 'all')" class="news__menu-item tablinks ">All</li>
+                        <li onclick="openTab(event, 'last__week')" class="news__menu-item tablinks news__active">Last week</li>
+                        <li onclick="openTab(event, 'this__month')" class="news__menu-item tablinks">For this month</li>
                     </ul>
                 </nav>
                 <div class="news__list">
-                    <div class="news__list-left">
-                        <div class="news__list-item">
+                    <div id="all" class="news__list-left tabcontent" >
+                        <div class="news__list-item accordion">
                             <div class="news__item-info">
                                 <p class="news__item-info__title">Lorem ipsum dolor sit amet, consectetur adipiscing elit in augue faucibus dolor consectetur porta.</p>
                                 <p class="news__item-info__date">October 15, 2020</p>
                             </div>
                             <img src="./img/news_plus.svg" alt="plus" class="plus">
                         </div>
-                        <div class="news__list-item">
+                        <div class="panel">
+                            <p class="news__item-info__title">Lorem ipsum dolor sit amet, consectetur adipiscing elit in augue faucibus dolor consectetur porta.</p>
+                        </div>
+                        <div class="news__list-item accordion">
                             <div class="news__item-info">
                                 <p class="news__item-info__title">Lorem ipsum dolor sit amet, consectetur adipiscing elit in augue faucibus dolor consectetur porta.</p>
                                 <p class="news__item-info__date">October 10, 2020</p>
                             </div>
                             <img src="./img/news_plus.svg" alt="plus" class="plus">
                         </div>
-                        <div class="news__list-item">
+                        <div class="panel">
+                            <p class="news__item-info__title">Lorem ipsum dolor sit amet, consectetur adipiscing elit in augue faucibus dolor consectetur porta.</p>
+                        </div>
+                        <div class="news__list-item accordion">
                             <div class="news__item-info">
                                 <p class="news__item-info__title">Lorem ipsum dolor sit amet, consectetur adipiscing elit in augue faucibus dolor consectetur porta.</p>
                                 <p class="news__item-info__date">October 9, 2020</p>
                             </div>
                             <img src="./img/news_plus.svg" alt="plus" class="plus">
                         </div>
-                        <div class="news__list-item">
+                        <div class="panel">
+                            <p class="news__item-info__title">Lorem ipsum dolor sit amet, consectetur adipiscing elit in augue faucibus dolor consectetur porta.</p>
+                        </div>
+                        <div class="news__list-item accordion">
                             <div class="news__item-info">
                                 <p class="news__item-info__title">Lorem ipsum dolor sit amet, consectetur adipiscing elit in augue faucibus dolor consectetur porta.</p>
                                 <p class="news__item-info__date">October 10, 2020</p>
                             </div>
                             <img src="./img/news_plus.svg" alt="plus" class="plus">
                         </div>
-                        <div class="news__list-item">
+                        <div class="panel">
+                            <p class="news__item-info__title">Lorem ipsum dolor sit amet, consectetur adipiscing elit in augue faucibus dolor consectetur porta.</p>
+                        </div>
+                        <div class="news__list-item accordion">
                             <div class="news__item-info">
                                 <p class="news__item-info__title">Lorem ipsum dolor sit amet, consectetur adipiscing elit in augue faucibus dolor consectetur porta.</p>
                                 <p class="news__item-info__date">October 10, 2020</p>
                             </div>
                             <img src="./img/news_plus.svg" alt="plus" class="plus">
                         </div>
-                        <div class="news__list-item">
+                        <div class="panel">
+                            <p class="news__item-info__title">Lorem ipsum dolor sit amet, consectetur adipiscing elit in augue faucibus dolor consectetur porta.</p>
+                        </div>
+                        <div class="news__list-item accordion">
                             <div class="news__item-info">
                                 <p class="news__item-info__title">Lorem ipsum dolor sit amet, consectetur adipiscing elit in augue faucibus dolor consectetur porta.</p>
                                 <p class="news__item-info__date">October 14, 2020</p>
                             </div>
                             <img src="./img/news_plus.svg" alt="plus" class="plus">
+                        </div>
+                        <div class="panel">
+                            <p class="news__item-info__title">Lorem ipsum dolor sit amet, consectetur adipiscing elit in augue faucibus dolor consectetur porta.</p>
+                        </div>
+                    </div>
+                    <div id="last__week" class="news__list-left tabcontent" >
+                        <div class="news__list-item accordion">
+                            <div class="news__item-info">
+                                <p class="news__item-info__title">Lorem ipsum dolor sit amet, consectetur adipiscing elit in augue faucibus dolor consectetur porta.</p>
+                                <p class="news__item-info__date">October 15, 2020</p>
+                            </div>
+                            <img src="./img/news_plus.svg" alt="plus" class="plus">
+                        </div>
+                        <div class="panel">
+                            <p class="news__item-info__title">Lorem ipsum dolor sit amet, consectetur adipiscing elit in augue faucibus dolor consectetur porta.</p>
+                        </div>
+                        <div class="news__list-item accordion">
+                            <div class="news__item-info">
+                                <p class="news__item-info__title">Lorem ipsum dolor sit amet, consectetur adipiscing elit in augue faucibus dolor consectetur porta.</p>
+                                <p class="news__item-info__date">October 10, 2020</p>
+                            </div>
+                            <img src="./img/news_plus.svg" alt="plus" class="plus">
+                        </div>
+                        <div class="panel">
+                            <p class="news__item-info__title">Lorem ipsum dolor sit amet, consectetur adipiscing elit in augue faucibus dolor consectetur porta.</p>
+                        </div>
+                        <div class="news__list-item accordion">
+                            <div class="news__item-info">
+                                <p class="news__item-info__title">Lorem ipsum dolor sit amet, consectetur adipiscing elit in augue faucibus dolor consectetur porta.</p>
+                                <p class="news__item-info__date">October 9, 2020</p>
+                            </div>
+                            <img src="./img/news_plus.svg" alt="plus" class="plus">
+                        </div>
+                        <div class="panel">
+                            <p class="news__item-info__title">Lorem ipsum dolor sit amet, consectetur adipiscing elit in augue faucibus dolor consectetur porta.</p>
+                        </div>
+                        <div class="news__list-item accordion">
+                            <div class="news__item-info">
+                                <p class="news__item-info__title">Lorem ipsum dolor sit amet, consectetur adipiscing elit in augue faucibus dolor consectetur porta.</p>
+                                <p class="news__item-info__date">October 10, 2020</p>
+                            </div>
+                            <img src="./img/news_plus.svg" alt="plus" class="plus">
+                        </div>
+                        <div class="panel">
+                            <p class="news__item-info__title">Lorem ipsum dolor sit amet, consectetur adipiscing elit in augue faucibus dolor consectetur porta.</p>
+                        </div>
+                        <div class="news__list-item accordion">
+                            <div class="news__item-info">
+                                <p class="news__item-info__title">Lorem ipsum dolor sit amet, consectetur adipiscing elit in augue faucibus dolor consectetur porta.</p>
+                                <p class="news__item-info__date">October 10, 2020</p>
+                            </div>
+                            <img src="./img/news_plus.svg" alt="plus" class="plus">
+                        </div>
+                        <div class="panel">
+                            <p class="news__item-info__title">Lorem ipsum dolor sit amet, consectetur adipiscing elit in augue faucibus dolor consectetur porta.</p>
+                        </div>
+                        <div class="news__list-item accordion">
+                            <div class="news__item-info">
+                                <p class="news__item-info__title">Lorem ipsum dolor sit amet, consectetur adipiscing elit in augue faucibus dolor consectetur porta.</p>
+                                <p class="news__item-info__date">October 14, 2020</p>
+                            </div>
+                            <img src="./img/news_plus.svg" alt="plus" class="plus">
+                        </div>
+                        <div class="panel">
+                            <p class="news__item-info__title">Lorem ipsum dolor sit amet, consectetur adipiscing elit in augue faucibus dolor consectetur porta.</p>
+                        </div>
+                    </div>
+                    <div id="this__month" class="news__list-left tabcontent" >
+                        <div class="news__list-item accordion">
+                            <div class="news__item-info">
+                                <p class="news__item-info__title">Lorem ipsum dolor sit amet, consectetur adipiscing elit in augue faucibus dolor consectetur porta.</p>
+                                <p class="news__item-info__date">October 15, 2020</p>
+                            </div>
+                            <img src="./img/news_plus.svg" alt="plus" class="plus">
+                        </div>
+                        <div class="panel">
+                            <p class="news__item-info__title">Lorem ipsum dolor sit amet, consectetur adipiscing elit in augue faucibus dolor consectetur porta.</p>
+                        </div>
+                        <div class="news__list-item accordion">
+                            <div class="news__item-info">
+                                <p class="news__item-info__title">Lorem ipsum dolor sit amet, consectetur adipiscing elit in augue faucibus dolor consectetur porta.</p>
+                                <p class="news__item-info__date">October 10, 2020</p>
+                            </div>
+                            <img src="./img/news_plus.svg" alt="plus" class="plus">
+                        </div>
+                        <div class="panel">
+                            <p class="news__item-info__title">Lorem ipsum dolor sit amet, consectetur adipiscing elit in augue faucibus dolor consectetur porta.</p>
+                        </div>
+                        <div class="news__list-item accordion">
+                            <div class="news__item-info">
+                                <p class="news__item-info__title">Lorem ipsum dolor sit amet, consectetur adipiscing elit in augue faucibus dolor consectetur porta.</p>
+                                <p class="news__item-info__date">October 9, 2020</p>
+                            </div>
+                            <img src="./img/news_plus.svg" alt="plus" class="plus">
+                        </div>
+                        <div class="panel">
+                            <p class="news__item-info__title">Lorem ipsum dolor sit amet, consectetur adipiscing elit in augue faucibus dolor consectetur porta.</p>
+                        </div>
+                        <div class="news__list-item accordion">
+                            <div class="news__item-info">
+                                <p class="news__item-info__title">Lorem ipsum dolor sit amet, consectetur adipiscing elit in augue faucibus dolor consectetur porta.</p>
+                                <p class="news__item-info__date">October 10, 2020</p>
+                            </div>
+                            <img src="./img/news_plus.svg" alt="plus" class="plus">
+                        </div>
+                        <div class="panel">
+                            <p class="news__item-info__title">Lorem ipsum dolor sit amet, consectetur adipiscing elit in augue faucibus dolor consectetur porta.</p>
+                        </div>
+                        <div class="news__list-item accordion">
+                            <div class="news__item-info">
+                                <p class="news__item-info__title">Lorem ipsum dolor sit amet, consectetur adipiscing elit in augue faucibus dolor consectetur porta.</p>
+                                <p class="news__item-info__date">October 10, 2020</p>
+                            </div>
+                            <img src="./img/news_plus.svg" alt="plus" class="plus">
+                        </div>
+                        <div class="panel">
+                            <p class="news__item-info__title">Lorem ipsum dolor sit amet, consectetur adipiscing elit in augue faucibus dolor consectetur porta.</p>
+                        </div>
+                        <div class="news__list-item accordion">
+                            <div class="news__item-info">
+                                <p class="news__item-info__title">Lorem ipsum dolor sit amet, consectetur adipiscing elit in augue faucibus dolor consectetur porta.</p>
+                                <p class="news__item-info__date">October 14, 2020</p>
+                            </div>
+                            <img src="./img/news_plus.svg" alt="plus" class="plus">
+                        </div>
+                        <div class="panel">
+                            <p class="news__item-info__title">Lorem ipsum dolor sit amet, consectetur adipiscing elit in augue faucibus dolor consectetur porta.</p>
                         </div>
                     </div>
                     <div class="news__list-right">
@@ -113,7 +257,7 @@
                                 <div class="minus"><img src="./img/Minus.svg" alt="minus"></div>
                             </div>
                             <div class="video__preloader">
-                                <img src="./img/youtube-logo.png" class="youtube" alt="youtube">
+                                <iframe src="https://www.youtube.com/embed/LDQeLf6M0Lo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                             </div>
                             <p class="news__list-videos__info">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean in augue faucibus dolor consectetur porta. Morbi vitae dui fringilla, bibendum diam eget, lacinia leo. Quisque rutrum lorem eu dolor sagittis tristique id et mauris. Maecenas non mauris tellus. Aliquam ante ligula, pellentesque quis ipsum vitae, euismod ultrices nisl. </p>
                             <div class="news__list-gallery">
@@ -127,19 +271,25 @@
                             <img src="./img/Arrow-top.svg" class="arrow__up" alt="arrow-up">
                         </div>
 
-                        <div class="news__list-item">
+                        <div class="news__list-item accordion">
                             <div class="news__item-info">
                                 <p class="news__item-info__title">Lorem ipsum dolor sit amet, consectetur adipiscing elit in augue faucibus dolor consectetur porta.</p>
                                 <p class="news__item-info__date">October 14, 2020</p>
                             </div>
                             <img src="./img/news_plus.svg" alt="plus" class="plus">
                         </div>
-                        <div class="news__list-item">
+                        <div class="panel">
+                            <p class="news__item-info__title">Lorem ipsum dolor sit amet, consectetur adipiscing elit in augue faucibus dolor consectetur porta.</p>
+                        </div>
+                        <div class="news__list-item accordion">
                             <div class="news__item-info">
                                 <p class="news__item-info__title">Lorem ipsum dolor sit amet, consectetur adipiscing elit in augue faucibus dolor consectetur porta.</p>
                                 <p class="news__item-info__date">October 14, 2020</p>
                             </div>
                             <img src="./img/news_plus.svg" alt="plus" class="plus">
+                        </div>
+                        <div class="panel">
+                            <p class="news__item-info__title">Lorem ipsum dolor sit amet, consectetur adipiscing elit in augue faucibus dolor consectetur porta.</p>
                         </div>
 
                     </div>
@@ -155,6 +305,69 @@
             </div>
         </div>
     </section>
+    <footer>
+        <div class="footer"> 
+            <div class="_container">
+                <div class="footer__wrapper">
+                    <div class="footer__wrapper-info">
+                        <img src="./img/Logo-white.png" alt="logo" class="logo__footer">
+                        <p class="logo__footer-text">ARCTIC HEAVYLIFT LTD.
+                            <span>ultimate solutions for project cargo transport to remote destinations</span> 
+                            </p>
+                    </div>
+                    <div class="footer__wrapper-info">
+                        <nav>
+                            <ul class="footer__wrapper-info__list">
+                                <li class="footer__info-list__title">Company</li>
+                                <li class="footer__wrapper-info__item"><a href="#">Home</a></li>
+                                <li class="footer__wrapper-info__item"><a href="#">About Us</a></li>
+                                <li class="footer__wrapper-info__item"><a href="#">News</a></li>
+                                <li class="footer__wrapper-info__item"><a href="#">Media</a></li>
+                                <li class="footer__wrapper-info__item"><a href="#">Contacts</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="footer__wrapper-info">
+                        <nav>
+                            <ul class="footer__wrapper-info__list">
+                                <li class="footer__info-list__title">Services</li>
+                                <li class="footer__wrapper-info__item"><a href="#">Ship chartering</a></li>
+                                <li class="footer__wrapper-info__item"><a href="#">ATransshipment management</a></li>
+                                <li class="footer__wrapper-info__item"><a href="#">Barge  transport</a></li>
+                                <li class="footer__wrapper-info__item"><a href="#">Logistics solutions
+                                </a></li>
+                                <li class="footer__wrapper-info__item"><a href="#">Shipping Intelligence</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="footer__wrapper-info">
+                        <nav>
+                            <ul class="footer__wrapper-info__list">
+                                <li class="footer__info-list__title">our contacts</li>
+                                <li class="footer__wrapper-info__item"><a href="#"><img src="./img/geoloc.svg" alt="location">205, Archbishop Makarios Avenue</a></li>
+                                <li class="footer__wrapper-info__item"><a href="tel:+35725030206"><img src="./img/phone_footer.svg" alt="phone_footer">+357 25 030206</a></li>
+                                <li class="footer__wrapper-info__item"><a href="mailto:info@arctic-heavylift.com"><img src="./img/mail_footer.svg" alt="mail_footer">info@arctic-heavylift.com</a></li>
+                                <li class="footer__wrapper-info__item social__footer">
+                                    <a href="#" class="solial__footer-item"><img src="./img/facebook.svg" alt="socila-facebook"></a>
+                                    <a href="#" class="solial__footer-item"><img src="./img/youtube.svg" alt="socila-youtube"></a>
+                                    <a href="#" class="solial__footer-item"><img src="./img/instagram.svg" alt="socila-instagram"></a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="subfooter">
+            <div class="_container">
+                <div class="subfooter__wrapper">
+                    <p class="copyright">Copyright © Arctic Heavylift Ltd. All Rights Reserved</p>
+                    <p class="creator">Created by <img src="./img/RUSO_logo.svg" alt="RUSO"></p>
+                </div>
+            </div>
+        </div>
+    </footer>
     <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
     <script src="js/index.js" defer></script>
 </body>
