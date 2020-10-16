@@ -41,7 +41,6 @@
             }
         }
         .header__other-item{
-            margin-left: 83px;
             cursor: pointer;
             font-size: 14px;
             line-height: 55px;
@@ -169,7 +168,7 @@
         flex-wrap: wrap;
         justify-content: space-between;
         li{
-            width: 48%;
+            width: 46%;
             margin-bottom: 30px;
             font-size: 13px;
             line-height: 24px;
@@ -297,10 +296,16 @@
     }
 }
 
+.header-mob{
+    display: none;
+}
 
 // ABOUT SECTION
 
 .about {
+    .more-mobile{
+        display: none;
+    }
     .advantage {
         height: 200px;
       }
@@ -499,7 +504,15 @@
 
 .services {
     padding: 38px 0px 80px;
+    .advantage {
+        height: 348px;
+      }
+      
+      .advantage-hover {
+        height: 348px;
+      }
     .objects{
+        height: 348px;
         .advantage-hover{
             display: none;
             background: url(../img/services.svg) no-repeat;

@@ -551,6 +551,18 @@
   padding: 38px 0px 80px;
 }
 
+.services .advantage {
+  height: 348px;
+}
+
+.services .advantage-hover {
+  height: 348px;
+}
+
+.services .objects {
+  height: 348px;
+}
+
 .services .objects .advantage-hover {
   display: none;
   background: url(../img/services.svg) no-repeat;

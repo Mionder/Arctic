@@ -32,7 +32,6 @@
     .header .header__other-wrapper nav ul .header__other-connection-item svg {
       fill: #D0D0D0 !important; }
   .header .header__other-wrapper nav ul .header__other-item {
-    margin-left: 83px;
     cursor: pointer;
     font-size: 14px;
     line-height: 55px;
@@ -117,7 +116,7 @@
     flex-wrap: wrap;
     justify-content: space-between; }
     .right-main__list li {
-      width: 48%;
+      width: 46%;
       margin-bottom: 30px;
       font-size: 13px;
       line-height: 24px;
@@ -214,6 +213,11 @@
       color: #6EB7F9;
       transition: 0.3s; }
 
+.header-mob {
+  display: none; }
+
+.about .more-mobile {
+  display: none; }
 .about .advantage {
   height: 200px; }
 .about .advantage-hover {
@@ -355,24 +359,30 @@
 
 .services {
   padding: 38px 0px 80px; }
-  .services .objects .advantage-hover {
-    display: none;
-    background: url(../img/services.svg) no-repeat;
-    background-size: cover; }
-    .services .objects .advantage-hover .services-more,
-    .services .objects .advantage-hover .services-about,
-    .services .objects .advantage-hover .services-header {
-      color: #fff;
-      transition: 0.3s; }
-    .services .objects .advantage-hover .services-more {
-      border-bottom: 2px solid #fff; }
-    .services .objects .advantage-hover .services-item__icon svg {
-      fill: #fff;
-      transition: 0.3s; }
-    .services .objects .advantage-hover .services-item__icon::after {
-      display: none; }
-    .services .objects .advantage-hover .services-more svg {
-      fill: #fff; }
+  .services .advantage {
+    height: 348px; }
+  .services .advantage-hover {
+    height: 348px; }
+  .services .objects {
+    height: 348px; }
+    .services .objects .advantage-hover {
+      display: none;
+      background: url(../img/services.svg) no-repeat;
+      background-size: cover; }
+      .services .objects .advantage-hover .services-more,
+      .services .objects .advantage-hover .services-about,
+      .services .objects .advantage-hover .services-header {
+        color: #fff;
+        transition: 0.3s; }
+      .services .objects .advantage-hover .services-more {
+        border-bottom: 2px solid #fff; }
+      .services .objects .advantage-hover .services-item__icon svg {
+        fill: #fff;
+        transition: 0.3s; }
+      .services .objects .advantage-hover .services-item__icon::after {
+        display: none; }
+      .services .objects .advantage-hover .services-more svg {
+        fill: #fff; }
   .services .about-us__header {
     margin-bottom: 40px; }
     .services .about-us__header::before {

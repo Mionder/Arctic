@@ -76,34 +76,53 @@ $(document).ready(function(){
             top = $(id).offset().top;
         $('body,html').animate({scrollTop: top}, 1500);
     });    
-    $(".owl-carousel").owlCarousel({
+    $(".services .owl-carousel").owlCarousel({
         nav: false,
         dots: false,
         items:5,
+        loop: true,
         margin: 20,
         navText: ["", ""],
         responsive:{
             0:{
-                items:1,
-                nav:true
+                items:2,
+                margin: 10,
+                nav: true
             },
             600:{
-                items:3,
-                nav:false
+                items:2,
             },
-            1000:{
-                items:5,
-                nav:true,
-                loop:false
+            1300:{
+                items:4,
             }
         }
     });
+    $(".about .owl-carousel").owlCarousel({
+      nav: false,
+      dots: false,
+      loop: true,
+      margin: 20,
+      navText: ["", ""],
+      responsive:{
+          0:{
+              items:2,
+              margin: 10
+          },
+      }
+  });
     $(".accordion").on("click", function(){
         if($(this).children().attr("src") == "./img/Minus2.svg"){
             $(this).children().attr("src", "./img/news_plus.svg");
         }   
         else
        $(this).children().attr("src", "./img/Minus2.svg");
+    });
+    $(".header-mob label").on("click", function(){
+      $(".header-mob  label").toggleClass("right");
+    });
+    $(".footer__info-list__title").on("click", function(){
+      $(".footer__info-list__title").toggleClass("open");
+       $(".footer__wrapper-info__item").slideToggle();
     });
 });
     
