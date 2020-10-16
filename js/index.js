@@ -58,4 +58,9 @@ $(document).ready(function(){
         else
        $(this).children().attr("src", "./img/Minus2.svg");
     })
+    $(".aboutUs__plus").on("click", function(){
+      let myUrl = "../img/About-hover.png";
+      $(this).parent().css("background-image", "url(" + myUrl + ")");
+      console.log($(this).parent());
+    });
 });
