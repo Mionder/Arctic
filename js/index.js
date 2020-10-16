@@ -50,7 +50,66 @@ $(document).ready(function(){
     })
     $("#phone__header").on("mouseout", function(){
         $(this).children().css("fill", "#2F97F4");
-    })
+    });
+      $("ul li").hover(function() {
+        $(this)
+          .children("ul")
+          .stop()
+          .slideToggle(500);
+      });   
+      $(".objects").hover(
+        function() {
+          $(this).find(".advantage, .advantage-hover").stop();
+          $(this).find(".advantage").slideUp();
+          $(this).find(".advantage-hover").slideDown();
+        },
+        function() {
+          $(this).find(".advantage, .advantage-hover").stop();
+          $(this).find(".advantage").slideDown();
+          $(this).find(".advantage-hover").slideUp();
+      
+        }
+      );
+      $(".header-bottom__scroll").on("click","a", function (event) {
+        event.preventDefault();
+        var id  = $(this).attr('href'),
+            top = $(id).offset().top;
+        $('body,html').animate({scrollTop: top}, 1500);
+    });    
+    $(".services .owl-carousel").owlCarousel({
+        nav: false,
+        dots: false,
+        items:5,
+        loop: true,
+        margin: 20,
+        navText: ["", ""],
+        responsive:{
+            0:{
+                items:2,
+                margin: 10,
+                nav: true
+            },
+            600:{
+                items:2,
+            },
+            1300:{
+                items:4,
+            }
+        }
+    });
+    $(".about .owl-carousel").owlCarousel({
+      nav: false,
+      dots: false,
+      loop: true,
+      margin: 20,
+      navText: ["", ""],
+      responsive:{
+          0:{
+              items:2,
+              margin: 10
+          },
+      }
+  });
     $(".accordion").on("click", function(){
         if($(this).children().attr("src") == "./img/Minus2.svg"){
             $(this).children().attr("src", "./img/news_plus.svg");
@@ -63,4 +122,13 @@ $(document).ready(function(){
       $(this).parent().css("background-image", "url(" + myUrl + ")");
       console.log($(this).parent());
     });
+    $(".header-mob label").on("click", function(){
+      $(".header-mob  label").toggleClass("right");
+    });
+    $(".footer__info-list__title").on("click", function(){
+      $(".footer__info-list__title").toggleClass("open");
+       $(".footer__wrapper-info__item").slideToggle();
+    });
 });
+
+    
